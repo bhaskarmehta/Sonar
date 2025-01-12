@@ -28,6 +28,11 @@ sudo nano /etc/postgresql/12/main/postgresql.conf
   listen_address ='*'
 
 
+Create a password for user postgres 
+------------------------------------
+ALTER USER postgres WITH PASSWORD 'postgres';
+
+
 Configure Sonarqube using Docker when Database is is running on the Same server as a Service
 --------------------------------------------------------------------------------------------
 docker run -d \
